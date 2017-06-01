@@ -562,7 +562,7 @@ footer .social a:hover{
     }
     header .toggle-menu{
         display: block;
-        color: #fff;
+        color: #333;
         position: absolute;
         right: 10px;
         top: 13px;
