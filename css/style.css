@@ -118,7 +118,7 @@ section{
 }
 
 header{
-    background: #222;
+    background: white;
     padding: 0 20px;
     position: fixed;
     top: 0; left: 0;
@@ -129,7 +129,7 @@ header .logo{
     float: left;
     font-family: 'Open Sans', sans-serif;
     padding: 13px 0;
-    color: #fbc93d;
+    color:#ff716a;
     font-weight: 300;
     font-size: 22px;
     line-height: 30px;
@@ -155,7 +155,7 @@ header nav ul li{
 header nav ul li a{
     display: inline-block;
     padding: 15px 20px;
-    color: #fff;
+    color: #FF726B;
     transition: 200ms;
 }
 header nav ul li a:hover, header nav ul li a.active{
@@ -167,7 +167,7 @@ header .toggle-menu{
 }
 
 .splash{
-    background: #fbc93d;
+    background: #ff5950;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -191,6 +191,7 @@ header .toggle-menu{
     animation: spin2 50s infinite linear;
 }
 .splash .container{
+    color:#eee;
     position: relative;
     top: 48%;
     transform: translateY(-50%);
@@ -201,6 +202,7 @@ header .toggle-menu{
 }
 .splash h2{
     margin-bottom: 40px;
+    color:#e1e1e1;
 }
 
 .overview{
@@ -247,13 +249,13 @@ header .toggle-menu{
 }
 
 .greybg{
-    background: #fbc93d;
+    background: #ff5950;
 }
-
 .about{
-    background: #FBCE50;
+    background: #FF726B;
     position: relative;
     overflow: hidden;
+    color:white;
 
 }
 .about img{
@@ -297,14 +299,14 @@ header .toggle-menu{
 }
 .about ul li .fa{
     float: left;
-    font-size: 30px;
-    background: #333;
-    color: #fbc93d;
+    font-size: 24px;
+    background: white;
+    color: #FF726B;
     width: 50px;
     height: 50px;
     display: inline-block;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 13px;
     border-radius: 25px;
     margin-right: 20px;
     margin-top: 7px;
@@ -330,19 +332,11 @@ section.components li{
 }
 
 .contact{
-    background: #fbc93d;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
-.contact:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(30deg);
-}
+
 .contact .input{
     width: 47%;
     float: left;
@@ -391,9 +385,6 @@ section.components li{
 }
 .contact h2{
     margin-bottom: 40px;
-}
-section.contact:hover{
-  background-color:#E2B024;
 }
 
 footer{
@@ -535,6 +526,7 @@ footer .social a:hover{
         display: block;
         width: 100%;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+
     }
     header .toggle-menu{
         display: block;

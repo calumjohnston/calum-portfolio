@@ -3389,8 +3389,8 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		cursor: default;
-		height: 80vh;
-		min-height: 25em;
+		height: 100vh;
+		min-height: 35em;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
