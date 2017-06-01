@@ -83,11 +83,7 @@ img{
     max-width: 1000px;
     margin: 0 auto;
 }
-.container:after{
-    content: "";
-    display: block;
-    clear: both;
-}
+
 section{
     padding: 75px 20px;
 }
@@ -207,11 +203,20 @@ header .toggle-menu{
 
 .overview{
     text-align: center;
+
+}
+.overview:hover > div > div{
+    transform:scale(1.0);
+    transition:all 250ms ease-in-out;
 }
 .overview > div > div{
     float: left;
-    width: 33%;
-    padding: 0 40px 0 40px;
+    padding:40px;
+
+}
+.overview > div > div:hover{
+    transform:scale(1.05);
+    transition:all 250ms ease-in-out;
 }
 .overview .fa{
     display: inline-block;
@@ -250,6 +255,16 @@ header .toggle-menu{
 
 .greybg{
     background: #ff5950;
+}
+.blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.blocks div{
+    border:1px solid #999;
+    border-radius:20px;
+    width:25%;
+    min-width:250px;
 }
 .about{
     background: #FF726B;
@@ -415,9 +430,9 @@ footer .social a:hover{
     color: #fff;
 }
 
-@media (max-width: 800px){
+@media (max-width: 840px){
     section{
-        padding: 80px 10px;
+        padding: 80px 40px;
     }
     header, footer{
         padding: 0 10px;
@@ -432,6 +447,10 @@ footer .social a:hover{
         top: 0;
         transform: none;
     }
+    .splash .container h1{
+        padding: 0px 20px;
+    }
+
     .recent-projects > div > div{
         padding: 0 20px;
     }
@@ -443,9 +462,22 @@ footer .social a:hover{
     }
     .about > div > div{
         width: 60%;
+
+    }
+    .overview{
+        padding-top:40px;
+    }
+    .overview > div{
+        flex-direction:column;
+        justify-content:center;
     }
     .overview > div > div{
-        padding: 0 20px;
+        width:100%;
+        margin-bottom:20px;
+        border: ;
+    }
+    .overview > div > div p{
+        padding:15px;
     }
     header nav ul li a{
         padding: 15px;
