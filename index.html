@@ -33,36 +33,11 @@
 
         <section class="splash">
             <div class="container">
-                <h1>I'm Calum, a <span class="title-bold">Web Designer / Developer</span> in Canberra.</h1>
+                <h1 id="lead-text">I'm Calum, a <span class="title-bold">Web Designer / Developer</span> in Canberra.</h1>
                 <h2>I make websites that work.</h2>
                 <a class="btn" href="#" data-scrollto="overview">Let's go<i class="fa fa-angle-down"></i></a>
             </div>
         </section>
-
-<!-- 
-        Start portfolio
-        <section class="recent-projects">
-            <div class="container">
-              <h1>Recent Projects</h1>
-              <ul id="og-grid" class="og-grid">
-                <li>
-                  <a class="expand-link" href="http://hughgordon.com.au" data-largesrc="images/1.png" data-title='<a class="title-link"href="http://www.hughgordon.com.au" alt="Hugh Gordon Architect">hugh gordon architect</a>' data-description="A fully fledged client management system for Canberra based architect Hugh Gordon Architect.">
-                    <img src="images/thumbs/1.png" alt="img01"/>
-                  </a>
-                </li>
-                <li>
-                  <a class="expand-link" href="http://wordcorrupt.me" data-largesrc="images/2.png" data-title='<a class="title-link"href="http://wordcorrupt.me" alt="Word Corrupt">wordcorrupt.me</a>' data-description="Word Corrupt is a simple web app I made over a weekend. It takes any uploaded Microsoft Word file and corrupts the file. 130,000 hits in the first 24 hours of launch.">
-                    <img src="images/thumbs/2.png" alt="img02"/>
-                  </a>
-                </li>
-                <li>
-                  <a class="expand-link" href="" data-largesrc="images/3.png" data-title="Cafe Blog" data-description="An example of a website for a local cafe, built on the WordPress CMS. This allows for easy updating of the site's content.">
-                    <img src="images/thumbs/3.png" alt="img03"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-        </section> -->
 
         <section class="overview">
             <div class="container blocks">
@@ -141,6 +116,23 @@
     			$(function() {
     				Grid.init();
     			});
+
+                var offset = $('.overview').offset().top;
+                var navbar = $('header');
+                var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
+                $(document).scroll(function() {
+                    position = $(this).scrollTop();
+                  if (position < offset){
+                    navbar.css('background-color', 'transparent');
+                    navbar_items.css('color','white');
+
+                }
+                  else
+                  {
+                    navbar.css('background-color', 'white');
+                    navbar_items.css('color','#33C1B4');
+                }
+                });
     		</script>
 
 

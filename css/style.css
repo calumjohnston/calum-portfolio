@@ -48,6 +48,7 @@ h1{
     font-size: 40px;
     line-height: 46px;
     font-weight: 300;
+
 }
 h2{
     font-size: 28px;
@@ -68,7 +69,7 @@ a{
 img{
     max-width: 100%;
 }
-
+84
 ::selection {
   background: #eee; /* WebKit/Blink Browsers */
 }
@@ -83,7 +84,19 @@ img{
     max-width: 1000px;
     margin: 0 auto;
 }
-
+#lead-text{
+    width:400px;
+    text-align:right;
+}
+.splash .container h2{
+    width:400px;
+    text-align:right;
+}
+.splash .container a{
+    width:150px;
+    text-align: center;
+    margin-left:250px;
+}
 section{
     padding: 75px 20px;
 }
@@ -114,7 +127,7 @@ section{
 }
 
 header{
-    background: white;
+
     padding: 0 20px;
     position: fixed;
     top: 0; left: 0;
@@ -125,7 +138,7 @@ header .logo{
     float: left;
     font-family: 'Open Sans', sans-serif;
     padding: 13px 0;
-    color:#ff716a;
+    color:white;
     font-weight: 300;
     font-size: 22px;
     line-height: 30px;
@@ -151,7 +164,7 @@ header nav ul li{
 header nav ul li a{
     display: inline-block;
     padding: 15px 20px;
-    color: #FF726B;
+    color: white;
     transition: 200ms;
 }
 header nav ul li a:hover, header nav ul li a.active{
@@ -163,7 +176,7 @@ header .toggle-menu{
 }
 
 .splash{
-    background: #ff5950;
+    background: #33C1B4;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -254,7 +267,7 @@ header .toggle-menu{
 }
 
 .greybg{
-    background: #ff5950;
+    background: #33C1B4;
 }
 .blocks{
     display: flex;
@@ -267,7 +280,7 @@ header .toggle-menu{
     min-width:250px;
 }
 .about{
-    background: #FF726B;
+    background: #33C1B4;
     position: relative;
     overflow: hidden;
     color:white;
@@ -316,7 +329,7 @@ header .toggle-menu{
     float: left;
     font-size: 24px;
     background: white;
-    color: #FF726B;
+    color: #33C1B4;
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -438,19 +451,18 @@ footer .social a:hover{
         padding: 0 10px;
     }
     .splash{
-        height: auto;
+
         padding: 150px 10px 80px 10px;
-        text-align: center;
+        text-align: left;
     }
     .splash .container{
         position: relative;
         top: 0;
         transform: none;
     }
-    .splash .container h1{
+    .splash .container h1,h2{
         padding: 0px 20px;
     }
-
     .recent-projects > div > div{
         padding: 0 20px;
     }
@@ -562,7 +574,7 @@ footer .social a:hover{
     }
     header .toggle-menu{
         display: block;
-        color: #ff5950;
+        color: white;
         position: absolute;
         right: 10px;
         top: 13px;
