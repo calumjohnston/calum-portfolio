@@ -229,7 +229,7 @@ h3{
 }
 @media (max-width: 440px){
     #lead-text{
-        line-height:60px;
+        line-height:45px;
         width:auto;
     }
     #sub-text{
