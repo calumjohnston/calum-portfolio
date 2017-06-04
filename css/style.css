@@ -101,6 +101,150 @@ section{
     padding: 75px 20px;
 }
 
+/* portfolio */
+
+.portfolio{
+    padding:0;
+    height:450px;
+}
+p{
+    margin-bottom:10px;
+}
+article#hg{
+    display:flex;
+    height:auto;
+    justify-content:center;
+}
+.title{
+    width:30%;
+    margin-top:40px;
+    border-right:1px solid #333;
+    padding-right:30px;
+    padding-top:0px;
+    text-align: right;
+    height:400px;
+    transition:all 250ms ease-in-out;
+}
+.title h1{
+    font-size:34px;
+    margin-bottom:30px;
+    line-height:30px;
+}
+.portfolio-image{
+    padding:0px 0px;
+
+}
+.portfolio-right{
+    margin-top:40px;
+    margin-bottom:100px;
+}
+{
+    display:flex;
+    width:100%;
+}
+.problem,.solution{
+    width:50%;
+    max-width:550px;
+    min-width:330px;
+    float:left;
+    padding:0px 40px;
+}
+.problem{
+
+    min-width:320px;
+    padding-bottom: 0px;
+}
+.solution{
+    padding-top:0px;
+}
+
+h3{
+    font-weight:400;
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+    width:75px;
+    line-height:18px;
+    padding-bottom: 3px;
+}
+.contact{
+    text-align: right;
+    font-size:22px;
+    padding:0;
+    margin:20px;
+}
+.contact h1{
+    margin:20px;
+}
+
+@media (max-width: 1450px){
+
+    .title{
+        width:30%;
+        min-width:370px;
+    }
+}
+@media (max-width: 1050px){
+    .title{
+        min-width:240px;
+    }
+    .problem,.solution{
+        min-width:260px;
+    }
+    .problem{
+        padding-right:15px;
+    }
+    .solution{
+        padding-left:15px;
+    }
+
+}
+@media (max-width: 800px){
+    .title{
+        margin-right:10px;
+        min-width:270px;
+    }
+    .problem,.solution{
+        width:100%;
+    }
+    .solution{
+        padding-left:40px;
+    }
+    .solution h3{
+        margin-top:40px;
+    }
+}
+@media (max-width: 580px){
+    .portfolio{
+        height: 1100px;
+    }
+    article#hg{
+        flex-direction:column;
+    }
+    .title{
+        height: auto;
+        min-width:270px;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 440px){
+    #lead-text{
+        line-height:60px;
+        width:auto;
+    }
+    #sub-text{
+        font-size:20px;
+        width:auto;
+    }
+    .splash .container a{
+        margin:0 auto;
+        margin-right:20px;
+    }
+    .intro{
+        text-align: right;
+        padding:0 20px;
+    }
+}
 .btn{
     display: inline-block;
     padding: 15px 30px;
@@ -362,61 +506,9 @@ section.components li{
   padding-bottom:10px;
 }
 
-.contact{
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
 
-.contact .input{
-    width: 47%;
-    float: left;
-}
-.contact .input:nth-of-type(odd){
-    margin-right: 6%;
-}
-.contact .message{
-    display: block;
-    clear: both;
-    float: none;
-    padding-top: 10px;
-}
-.contact .input input{
-    display: block;
-    width: 100%;
-    background: rgba(255,255,255,0.3);
-    border: 0;
-    padding: 10px 15px;
-}
-.contact .message textarea{
-    display: block;
-    width: 100%;
-    height: 200px;
-    background: rgba(255,255,255,0.3);
-    border: 0;
-    padding: 10px 15px;
-    resize: vertical;
-}
-.contact label{
-    position: relative;
-    z-index: 10;
-}
-.contact label span{
-    display: block;
-    text-align: left;
-    font-size: 14px;
-}
-.contact label span .fa{
-    margin-right: 7px;
-}
-.contact .submit{
-    display: block;
-    text-align: center;
-    padding-top: 40px;
-}
-.contact h2{
-    margin-bottom: 40px;
-}
+
+
 
 footer{
     background: #222;
@@ -464,7 +556,7 @@ footer .social a:hover{
         transform: none;
     }
     .splash .container h1,h2{
-        padding: 0px 20px;
+        padding: 0px 0px;
     }
     .recent-projects > div > div{
         padding: 0 20px;
@@ -590,21 +682,6 @@ footer .social a:hover{
         float: none;
     }
     footer .social{
-        padding-top: 0;
-    }
-
-    .contact .input{
-        display: block;
-        width: 100%;
-        float: none;
-    }
-    .contact .input:nth-of-type(odd){
-        margin-right: 0;
-    }
-    .contact label{
-        padding-top: 10px;
-    }
-    .contact label:first-of-type{
         padding-top: 0;
     }
     .contact h1{
