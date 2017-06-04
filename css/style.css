@@ -228,6 +228,9 @@ h3{
     }
 }
 @media (max-width: 440px){
+    .splash{
+        height:90vh!important;
+    }
     #lead-text{
         line-height:45px;
         width:auto;
