@@ -228,9 +228,7 @@ h3{
     }
 }
 @media (max-width: 440px){
-    .splash{
-        height:90vh!important;
-    }
+
     #lead-text{
         line-height:45px;
         width:auto;
@@ -240,8 +238,8 @@ h3{
         width:auto;
     }
     .splash .container a{
-        margin:0 auto;
-        margin-right:20px;
+        margin-left:auto!important;
+
     }
     .intro{
         text-align: right;
