@@ -45,13 +45,13 @@ h1, h2, h3, p{
 }
 
 h1{
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 59px;
+    line-height: 73px;
     font-weight: 300;
-
+    font-family: Poppins;
 }
 h2{
-    font-size: 28px;
+    font-size: 23px;
     line-height: 36px;
     font-weight: 300;
 }
@@ -81,15 +81,15 @@ img{
 
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
-#lead-text{
-    width:400px;
+.lead-text{
+    width: 520px;
     text-align:right;
 }
 .splash .container h2{
-    width:400px;
+    width: 520px;
     text-align:right;
 }
 .splash .container a{
@@ -227,25 +227,7 @@ h3{
         margin: 20px auto;
     }
 }
-@media (max-width: 440px){
 
-    #lead-text{
-        line-height:45px;
-        width:auto;
-    }
-    #sub-text{
-        font-size:20px;
-        width:auto;
-    }
-    .splash .container a{
-        margin-left:auto!important;
-
-    }
-    .intro{
-        text-align: right;
-        padding:0 20px;
-    }
-}
 .btn{
     display: inline-block;
     padding: 15px 30px;
@@ -282,7 +264,7 @@ header{
 header .logo{
     float: left;
     font-family: 'Open Sans', sans-serif;
-    padding: 13px 0;
+    padding: 10px 0px;
     color:white;
     font-weight: 300;
     font-size: 22px;
@@ -293,7 +275,7 @@ header .logo .fa{
     font-size: 16px;
     position: relative;
     top: -1px;
-    margin-right: 7px;
+    margin-right: 15px;
 }
 header nav{
     float: right;
@@ -308,9 +290,10 @@ header nav ul li{
 }
 header nav ul li a{
     display: inline-block;
-    padding: 15px 20px;
+    padding: 21px 20px;
     color: white;
     transition: 200ms;
+    font-size: 32px;
 }
 header nav ul li a:hover, header nav ul li a.active{
     text-decoration: none;
@@ -321,7 +304,7 @@ header .toggle-menu{
 }
 
 .splash{
-    background: #33C1B4;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -356,188 +339,10 @@ header .toggle-menu{
 }
 .splash h2{
     margin-bottom: 40px;
-    color:#e1e1e1;
-}
-
-.overview{
-    text-align: center;
-
-}
-.overview:hover > div > div{
-    transform:scale(1.0);
-    transition:all 250ms ease-in-out;
-}
-.overview > div > div{
-    float: left;
-    padding:40px;
-
-}
-.overview > div > div:hover{
-    transform:scale(1.05);
-    transition:all 250ms ease-in-out;
-}
-.overview .fa{
-    display: inline-block;
-    font-size: 50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background: #f6f6f6;
-    margin-bottom: 20px;
-    padding-top: 25px;
-}
-.overview p{
-    margin-bottom: 0;
-}
-.recent-projects{
-    text-align: center;
-}
-.recent-projects > div > div{
-    float: left;
-    width: 33%;
-    padding: 0 40px 0 40px;
-}
-.recent-projects .fa{
-    display: inline-block;
-    font-size: 50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background: #f6f6f6;
-    margin-bottom: 20px;
-    padding-top: 25px;
-}
-.recent-projects p{
-    margin-bottom: 0;
-}
-
-.greybg{
-    background: #33C1B4;
-}
-.blocks{
-    display: flex;
-    justify-content: space-between;
-}
-.blocks div{
-    width:25%;
-    min-width:250px;
-}
-.about{
-    background: #33C1B4;
-    position: relative;
-    overflow: hidden;
-    color:white;
-
-}
-
-.about img{
-    position: absolute;
-    top: 100px;
-    left: 55%;
-}
-.about:nth-of-type(even) img{
-    right: auto;
-    left: 55%;
-}
-.about > div > div{
-    width: 50%;
-    float: left;
-}
-.about > div > div > p{
-    margin-bottom: 40px;
-}
-.about:nth-of-type(odd) > div > div{
-    float: left;
-}
-.about ul{
-    margin: 0;
-    padding: 0;
-}
-.about ul li{
-    display: block;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-}
-.about ul li:last-child{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 0;
-}
-.about ul li h3{
-    margin: 0 0 5px 0;
-    letter-spacing:1.2pt;
-    font-weight:300;
-}
-.about ul li p:last-child{
-    margin: 0;
-}
-.about ul li .fa{
-    float: left;
-    font-size: 24px;
-    background: white;
-    color: #33C1B4;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    text-align: center;
-    padding-top: 13px;
-    border-radius: 25px;
-    margin-right: 20px;
-    margin-top: 7px;
-}
-.checkmark{
-  color: #33C1B4;!important;
-  font-size:26px!important;
-  background:none!important;
-  margin-right:20px;
-
-}
-.about ul li p{
-    overflow: hidden;
-}
-section.components{
-display:flex!important;
-justify-content: flex-end!important;
-}
-section.components h1{
-  margin-bottom:40px;
-}
-section.components li{
-  list-style:none;
-  padding-bottom:10px;
+    color: #d7e3e8;
 }
 
 
-
-
-
-footer{
-    background: #222;
-    color: #ccc;
-    padding: 0 20px;
-}
-footer .copyright{
-    float: left;
-    padding: 15px 0;
-}
-footer .copyright p{
-    margin: 0;
-}
-footer .copyright a{
-    color: #fff;
-}
-footer .social{
-    float: right;
-    padding: 15px 0;
-}
-footer .social a{
-    margin-left: 10px;
-    font-size: 20px;
-    color: #ccc;
-}
-footer .social a:hover{
-    color: #fff;
-}
 
 @media (max-width: 840px){
     section{
@@ -559,133 +364,43 @@ footer .social a:hover{
     .splash .container h1,h2{
         padding: 0px 0px;
     }
-    .recent-projects > div > div{
-        padding: 0 20px;
-    }
-    .about img{
-        right: 65%;
-    }
-    .about:nth-of-type(even) img{
-        left: 65%;
-    }
-    .about > div > div{
-        width: 60%;
 
-    }
-    .overview{
-        padding-top:40px;
-    }
-    .overview > div{
-        flex-direction:column;
-        justify-content:center;
-    }
-    .overview > div > div{
-        width:100%;
-        margin-bottom:20px;
-        border: ;
-    }
-    .overview > div > div p{
-        padding:15px;
-    }
-    header nav ul li a{
-        padding: 15px;
-    }
-    .pricing > div > div{
-        width: 100% !important;
-        float: none;
-        margin: 0 0 20px 0 !important;
-        box-shadow: none !important;
-    }
-    .pricing > div > div h3{
-        background: #555 !important;
-        color: #fff !important;
-    }
-    .pricing h2{
-        margin-bottom: 40px;
-    }
 }
 
 @media (max-width: 600px){
-    section{
-        padding: 40px 10px;
-    }
-    .splash{
-        padding: 100px 10px 40px 10px;
-    }
-    .recent-projects > div > div{
-        float: none;
-        width: 100%;
-        margin-bottom: 40px;
-        padding: 0;
-    }
-    .recent-projects > div > div:last-child{
-        margin-bottom: 0;
-    }
-    .recent-projects p{
-        overflow: hidden;
-    }
-    .about img{
-        display: none;
-    }
-    .about > div > div{
-        width: 100%;
-        float: none;
-    }
-    .overview > div > div{
-        float: none;
-        width: 100%;
-        margin-bottom: 40px;
-        padding: 0;
-    }
-    .overview > div > div:last-child{
-        margin-bottom: 0;
-    }
-    .overview p{
-        overflow: hidden;
-    }
-    header nav{
-        float: none;
-        position: fixed;
-        top: 56px;
-        left: -300px;
-        bottom: 0;
-        width: 100%;
-        max-width: 300px;
-        background: #333;
-        transition: 200ms;
-    }
-    header nav.visible{
-        left: 0px;
-    }
-    header nav ul li{
-        display: block;
-        float: none;
-        width: 100%;
-    }
-    header nav ul li a{
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+  
+  h1.lead-text{
+    font-size:42px;
+    line-height:60px;
+    width:100%;
+    padding-right: 30px!important;
+  }
+  #sub-text{
+    width: 100%;
+    padding-right:30px!important;
+  }
+}
 
-    }
-    header .toggle-menu{
-        display: block;
-        color: white;
-        position: absolute;
-        right: 10px;
-        top: 13px;
-        font-size: 28px;
-    }
-    footer{
-        text-align: center;
-    }
-    footer .copyright, footer .social{
-        float: none;
-    }
-    footer .social{
-        padding-top: 0;
-    }
-    .contact h1{
-      font-size:18px;
-    }
+@media (max-width: 470px){
+  
+  h1.lead-text{
+    font-size:32px;
+    line-height:60px;
+    width:100%;
+    padding-right: 30px!important;
+  }
+}
+@media (max-width: 380px){
+  
+  h1.lead-text{
+    font-size:25px;
+    line-height:40px;
+    width:100%;
+    padding-right: 30px!important;
+  }
+    #sub-text{
+    width: 100%;
+    font-size: 18px;
+    padding-right:30px!important;
+  }
 }

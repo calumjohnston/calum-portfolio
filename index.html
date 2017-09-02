@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <meta name="description" itemprop="description" content="I'm Calum, a Canberra based web designer. I design, develop, and optimise websites for local businesses in Canberra - increasing clicks, traffic, and driving clients." />
         <meta name="keywords" itemprop="keywords" content="Freelance web designer canberra, Freelance web designer canberra, canberra web designer, web design canberra, freelance web design, web designer, web developer" />
-        <title>Calum Johnston | Web Design in Canberra</title>
+        <title>Calum Johnston | Web Design & Digital Marketing</title>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,600" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -19,57 +19,50 @@
 
         <header>
             <div class="container">
-                <a class="logo-link"  data-scrollto="splash" href="#"><h1 class="logo"><i class="fa fa-rocket"></i>calum johnston</h1></a>
-                <i class="fa fa-bars toggle-menu"></i>
-              <!--   <nav>
+                <div class="logo">
+                    <a class="logo-link"  data-scrollto="splash" href="#"><h1 class="logo"><i class="fa fa-rocket"></i>calum johnston</h1></a>
+                    <i class="fa fa-bars toggle-menu"></i>
+                </div>
+                <nav>
                     <ul>
-                        <li><a href="#" data-scrollto="splash">home</a></li>
-                        <li><a href="#" data-scrollto="portfolio">work</a></li>
-                       <li><a href="#" data-scrollto="contact">contact</a></li>
+                        <li><a href="https://www.linkedin.com/in/calumjohnston/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                     </ul>
-                </nav> -->
+                </nav>
             </div>
         </header>
 
         <section class="splash">
             <div class="container intro">
-                <h1 id="lead-text">I'm Calum,<br> a <b>Web Designer / Developer</b> in Canberra.</h1>
+                <h1 class="lead-text">I'm Calum,<br> a <b>Web Designer / Digital Marketer</b> in Canberra.</h1>
                 <h2 id="sub-text">I make websites that work.</h2>
-               
             </div>
         </section>
 
-        <!-- THE CONTACT  -->
-          <section class="contact">
-            calumjohnston1@gmail.com
-          </section>
-    
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="js/grid.js"></script>
         <script src="js/script.js"></script>
-    		<script>
-    			$(function() {
-    				Grid.init();
-    			});
+		<script>
+			$(function() {
+				Grid.init();
+			});
 
-                var offset = $('.portfolio').offset().top;
-                var navbar = $('header');
-                var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
-                $(document).scroll(function() {
-                    position = $(this).scrollTop();
-                  if (position < offset){
-                    navbar.css('background-color', 'transparent');
-                    navbar_items.css('color','white');
+            var offset = $('.portfolio').offset().top;
+            var navbar = $('header');
+            var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
+            $(document).scroll(function() {
+                position = $(this).scrollTop();
+              if (position < offset){
+                navbar.css('background-color', 'transparent');
+                navbar_items.css('color','white');
 
-                }
-                  else
-                  {
-                    navbar.css('background-color', '#33C1B4');
-                    navbar_items.css('color','white');
-                }
-                });
-    		</script>
-
+            }
+              else
+              {
+                navbar.css('background-color', '#33C1B4');
+                navbar_items.css('color','white');
+            }
+            });
+		</script>
 
     </body>
 </html>
