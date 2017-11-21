@@ -30,7 +30,7 @@
 
         <section class="splash">
             <div class="container intro">
-                <h1 class="lead-text">I'm Calum,<br> a <b>Web Designer / Digital Marketer</b> in Canberra.</h1>
+                <h1 class="lead-text">I'm Calum,<br> a <b style="font-weight: 600;">Web Designer / Digital Marketer</b> in Canberra.</h1>
                 <h2 id="sub-text">I make websites that work.</h2>
             </div>
         </section>
@@ -43,28 +43,5 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="js/grid.js"></script>
         <script src="js/script.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-
-            var offset = $('.portfolio').offset().top;
-            var navbar = $('header');
-            var navbar_items = $('.logo,nav ul li a,header .toggle-menu');
-            $(document).scroll(function() {
-                position = $(this).scrollTop();
-              if (position < offset){
-                navbar.css('background-color', 'transparent');
-                navbar_items.css('color','white');
-
-            }
-              else
-              {
-                navbar.css('background-color', '#33C1B4');
-                navbar_items.css('color','white');
-            }
-            });
-		</script>
-
     </body>
 </html>
